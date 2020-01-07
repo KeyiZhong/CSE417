@@ -1,0 +1,57 @@
+\def\Line{\hbox to \hsize}
+\def\handout#1{
+      \Line{University of Washington\hfil\today}
+      \Line{Department of Computer Science and Engineering\hfil}
+      \Line{CSE 417, Winter 2020\hfil} 
+      \vskip45pt
+      \centerline{\vbox{\hbox{#1}\vskip2pt\hrule}}}
+
+\def\problem#1{\goodbreak\bigskip\noindent{\bf Problem #1:}\par\smallskip}
+
+\def\extra#1{\goodbreak\bigskip\noindent{\bf Extra Credit #1:}\par\smallskip}
+
+\def\program#1{\goodbreak\bigskip\noindent{\bf Programming Problem #1:}\par\smallskip}
+
+
+\def\solution{\goodbreak\medskip\noindent{\bf Solution:}\par\smallskip}
+
+\def\note{\goodbreak\smallskip\noindent{\bf Note:}\par\smallskip}
+
+\def\margin#1{\hbox to 0pt{\hss #1\quad}}
+
+\def\endpage{\vfill\eject}
+
+\def\floor #1{\left\lfloor {#1} \right\rfloor}
+\def\ceil #1{\left\lceil {#1} \right\rceil}
+\def\ceiling #1{\left\lceil {#1} \right\rceil}
+\def\size #1{\left| {#1} \right|}
+\def\paren #1{\left( {#1} \right)}
+\def\curly #1{\left\{ {#1} \right\}}
+\def\Prob{{\rm Prob}}
+\def\prob{{\rm Prob}}
+
+% list is used by latex, so ...
+\def\lst #1#2#3{#1_{#2},\ldots,#1_{#3}}
+\def\set #1#2#3{\curly {\lst {#1}{#2}{#3}}}
+\def\path #1#2#3{#1_{#2}\cdots #1_{#3}}
+
+
+
+
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{color}
+\parindent=0pt
+\pagestyle{empty}
+
+\begin{document}
+
+\input{hw1.tex}
+%\input{mt1_sln.tex}
+%\input{final.tex}
+
+
+\end{document}
